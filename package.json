@@ -1,15 +1,17 @@
 {
   "name": "test-babel-jsx",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "jsx render test.",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "compile": "npx babel src --out-dir ./compile-dist"
   },
-  "author": "",
+  "author": "wind",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
     "@babel/plugin-transform-react-jsx": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
